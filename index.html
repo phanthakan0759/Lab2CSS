@@ -11,6 +11,8 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
@@ -109,21 +111,47 @@
 			<h2>Contact</h2>
 			<p>If you want to ask me for someting,just fill out the form below.</p>
 		</header>
-		<form method="post" action="#">
+		<!-- <form method="post" action="#" id="my-form">
 			<div class="row gtr-50">
-				<div class="col-6 col-12-mobile"><input type="text" class="text" name="name" placeholder="Name" /></div>
-				<div class="col-6 col-12-mobile"><input type="text" class="text" name="email" placeholder="Email" />
+				<div class="col-6 col-12-mobile name"><input type="text" class="text" name="name" placeholder="Name" /></div>
+				<div class="col-6 col-12-mobile email"><input type="text" class="text" name="email" placeholder="Email" />
 				</div>
-				<div class="col-12">
+				<div class="col-12 message">
 					<textarea name="message" placeholder="Message"></textarea>
 				</div>
 				<div class="col-12">
-					<ul class="actions">
-						<li><input type="submit" value="Send Message" /></li>
-					</ul>
+					<input type="submit" value="Submit" class="btn btn-success">
 				</div>
 			</div>
-		</form>
+		</form> -->
+		<section class="container">
+				<form action="" id="my-form">
+					
+					<div class="msg"></div>
+					<div>
+						<label for="name">Name:</label>
+						<input type="text" name="" id="name">
+					</div>
+		
+					<div>
+						<label for="email">Email:</label>
+						<input type="text" name="" id="email">
+					</div>
+ 
+					<div>
+						<br />
+						<label for="message"></label>
+						<textarea name="message" placeholder="Message..." id="message"></textarea>
+					</div>
+				<br />
+				<input type="submit" value="Submit" class="btn btn-success">
+				
+			</form>
+			<br />
+			<ul id="users"></ul>
+			</form>
+		</section>
+		
 	</article>
 
 	<!-- Generic -->
@@ -300,7 +328,7 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
-
+	<script src="main.js"></script>
 </body>
 
 </html>
